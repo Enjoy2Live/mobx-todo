@@ -31,7 +31,10 @@ const TodoList = ({ store }) => {
       <h1>create new todo</h1>
       <input onKeyPress={action((e) => createNew(e))} />
       <h1>search</h1>
-      <input value={store.input} onChange={action((e) => filter(e))} />
+      <input value={store.input} onChange={action((e) => filter(e))} /> 
+      <br />
+      <br />
+      <strong style={{marginTop: "10px"}}>Check the code at <a href="https://github.com/Enjoy2Live/mobx-todo">Github</a></strong>
     </div>
   );
 };
